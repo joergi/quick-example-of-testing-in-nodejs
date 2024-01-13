@@ -10,7 +10,7 @@
   "author": "Alicia <alicia@aliciasykes.com> (http://aliciasykes.com)",
   "license": "ISC",
   "devDependencies": {
-    "chai": "^4.1.2",
+    "chai": "^5.0.0",
     "coffee-script": "^1.12.7",
     "istanbul": "^1.1.0-alpha.1",
     "mocha": "^4.0.1",
