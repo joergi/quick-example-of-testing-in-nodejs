@@ -2,9 +2,6 @@ name: Test Npm
 
 on:
   pull_request:
-    paths:
-      - '/**'
-      - '.github/**'
     branches: [ main ]
 
   workflow_dispatch: {}
