@@ -1,0 +1,22 @@
+name: Test Demo 1
+
+on:
+  pull_request:
+    paths:
+      - '/**'
+      - '.github/**'
+    branches: [ main ]
+
+  workflow_dispatch: {}
+
+jobs:
+  test-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up npm
+        uses: actions/setup-node@v4
+        with:
+          node-version: 8
+      - run: npm ci
+      - run: npm test
